@@ -14,6 +14,10 @@ To run the container, do the following:
 You can see gitbucket running on http://localhost:8080/
 You also see gitbucket data write out to "./gitbucket-data".
 
+In order to access the git repository over SSH (port 29418), check settings below.
+
+- GitBucket > Administration > System Settings > SSH access
+
 ## Building
 
 To build the image, do the following:
