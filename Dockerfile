@@ -13,5 +13,6 @@ RUN ln -s /gitbucket /root/.gitbucket
 
 VOLUME /gitbucket
 EXPOSE 8080
+EXPOSE 29418
 
 CMD ["java", "-jar", "/opt/gitbucket.war"]
