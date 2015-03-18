@@ -4,7 +4,7 @@ MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
 RUN apt-get update && \
     apt-get upgrade -q -y && \
-    apt-get install -q -y --no-install-recommends openjdk-7-jre-headless && \
+    apt-get install -q -y --force-yes --no-install-recommends openjdk-7-jre-headless && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
