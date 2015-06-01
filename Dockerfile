@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ADD https://github.com/takezoe/gitbucket/releases/download/3.2/gitbucket.war /opt/gitbucket.war
+ADD https://github.com/takezoe/gitbucket/releases/download/3.3/gitbucket.war /opt/gitbucket.war
 
 RUN ln -s /gitbucket /root/.gitbucket
 
