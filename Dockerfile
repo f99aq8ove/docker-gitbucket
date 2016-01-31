@@ -1,10 +1,11 @@
-FROM debian:wheezy
+FROM debian:jessie
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
+RUN echo 'deb http://http.debian.net/debian jessie-backports main' >> /etc/apt/sources.list
 RUN apt-get update && \
     apt-get upgrade -q -y && \
-    apt-get install -q -y --no-install-recommends openjdk-7-jre-headless && \
+    apt-get install -t jessie-backports -q -y --no-install-recommends openjdk-8-jre-headless && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
