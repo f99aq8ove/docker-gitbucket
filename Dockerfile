@@ -1,8 +1,6 @@
-FROM alpine
+FROM java:jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
-
-RUN apk --update add openjdk8-jre && rm -rf /var/cache/apk/*
 
 ADD https://github.com/gitbucket/gitbucket/releases/download/3.13/gitbucket.war /opt/gitbucket.war
 
