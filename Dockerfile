@@ -1,4 +1,4 @@
-FROM java:jre
+FROM java:jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
