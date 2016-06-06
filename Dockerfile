@@ -2,7 +2,7 @@ FROM java:jre
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ADD https://github.com/gitbucket/gitbucket/releases/download/4.0/gitbucket.war /opt/gitbucket.war
+ADD https://github.com/gitbucket/gitbucket/releases/download/4.1/gitbucket.war /opt/gitbucket.war
 
 RUN ln -s /gitbucket /root/.gitbucket
 
