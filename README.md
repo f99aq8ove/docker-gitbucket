@@ -18,6 +18,14 @@ In order to access the git repository over SSH (port 29418), check settings belo
 
 - GitBucket > Administration > System Settings > SSH access
 
+Additional environment variables can be set as below.
+
+Environment variable | Value | Example
+---------------------|-------|--------
+`GITBUCKET_DB_URL`, `GITBUCKET_DB_USER`, `GITBUCKET_DB_PASSWORD` | Database connection for MySQL or PostgreSQL. See [External database configuration](https://github.com/gitbucket/gitbucket/wiki/External-database-configuration). Defaults to H2. | `jdbc:postgresql://db/gitbucket`, `user`, `password`
+`JAVA_OPTS`         | JavaVM options.     | `-Xmx1g`
+`GITBUCKET_OPTS`    | GitBucket options.  | `--prefix=/gitbucket`
+
 ## Building
 
 To build the image, do the following:

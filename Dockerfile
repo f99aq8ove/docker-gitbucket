@@ -4,6 +4,8 @@ MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
 ADD https://github.com/gitbucket/gitbucket/releases/download/4.4/gitbucket.war /opt/gitbucket.war
 
+COPY gitbucket.sh /opt/gitbucket.sh
+
 RUN ln -s /gitbucket /root/.gitbucket
 
 VOLUME /gitbucket
@@ -13,4 +15,4 @@ EXPOSE 8080
 # Port for SSH access to git repository (Optional)
 EXPOSE 29418
 
-CMD ["java", "-jar", "/opt/gitbucket.war"]
+CMD ["/opt/gitbucket.sh"]
