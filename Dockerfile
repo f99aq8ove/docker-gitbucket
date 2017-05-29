@@ -1,4 +1,4 @@
-FROM java:jre
+FROM openjdk:jre
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
