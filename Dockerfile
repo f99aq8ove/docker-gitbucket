@@ -2,7 +2,7 @@ FROM openjdk:jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ADD https://github.com/gitbucket/gitbucket/releases/download/4.15.0/gitbucket.war /opt/gitbucket.war
+ADD https://github.com/gitbucket/gitbucket/releases/download/4.16.0/gitbucket.war /opt/gitbucket.war
 
 COPY gitbucket.sh /opt/gitbucket.sh
 
