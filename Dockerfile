@@ -4,6 +4,8 @@ MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
 ADD https://github.com/gitbucket/gitbucket/releases/download/4.18.0/gitbucket.war /opt/gitbucket.war
 
+apk add --no-cache ttf-dejavu git
+
 COPY gitbucket.sh /opt/gitbucket.sh
 
 RUN ln -s /gitbucket /root/.gitbucket
