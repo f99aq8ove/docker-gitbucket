@@ -2,7 +2,7 @@ FROM openjdk:jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ADD https://github.com/gitbucket/gitbucket/releases/download/4.18.0/gitbucket.war /opt/gitbucket.war
+ADD https://github.com/gitbucket/gitbucket/releases/download/4.19.2/gitbucket.war /opt/gitbucket.war
 
 RUN apk add --no-cache ttf-dejavu git
 
