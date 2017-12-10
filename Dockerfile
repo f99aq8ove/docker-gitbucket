@@ -2,7 +2,8 @@ FROM openjdk:jre
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ADD https://github.com/gitbucket/gitbucket/releases/download/4.19.2/gitbucket.war /opt/gitbucket.war
+ENV GITBUCKET_VER 4.19.3
+ADD https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VER/gitbucket.war /opt/gitbucket.war
 
 COPY gitbucket.sh /opt/gitbucket.sh
 
