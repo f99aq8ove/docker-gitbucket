@@ -2,7 +2,7 @@ FROM openjdk:jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ENV GITBUCKET_VER 4.21.2
+ENV GITBUCKET_VER 4.22.0
 ADD https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VER/gitbucket.war /opt/gitbucket.war
 
 RUN apk add --no-cache ttf-dejavu git graphviz
