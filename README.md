@@ -26,6 +26,7 @@ Environment variable | Value | Example
 `JAVA_OPTS`         | JavaVM options.     | `-Xmx1g`
 `GITBUCKET_OPTS`    | GitBucket options.  | `--prefix=/gitbucket`
 `GITBUCKET_CERT`    | LDAP Authentication certificate path.  Embed a certificate to container. See [LDAP Authentication Settings](https://github.com/gitbucket/gitbucket/wiki/LDAP-Authentication-Settings)  | `/var/lib/samba/private/tls/cert.pem`
+`GITBUCKET_EXTRA_DEPS`    | system dependencies required by gitbucket plugins.     | `git procps`
 
 ## Building
 
