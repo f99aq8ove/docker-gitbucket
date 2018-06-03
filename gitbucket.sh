@@ -28,13 +28,8 @@ if [ "$GITBUCKET_CERT" ]; then
 fi
 
 # Add support to install system utils that are required by some gitbucket plugins
-if [ "$GITBUCKET_EXTRA_DEPS" ]
-  then
-	apt-get update 
-	apt-get upgrade -y 
-	apt-get install --no-install-recommends -y $GITBUCKET_EXTRA_DEPS
-    apt-get clean 
-	rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+if [ "$GITBUCKET_EXTRA_DEPS" ]; then
+    apk add --no-cache $GITBUCKET_EXTRA_DEPS
 fi
 
 exec java $JAVA_OPTS -jar /opt/gitbucket.war $GITBUCKET_OPTS
