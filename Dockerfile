@@ -3,6 +3,8 @@ FROM openjdk:jre
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
 ENV GITBUCKET_VER 4.25.0
+ENV GITBUCKET_EXTRA_DEPS "git procps"
+
 ADD https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VER/gitbucket.war /opt/gitbucket.war
 
 RUN apt-get update && apt-get upgrade -y && apt-get install --no-install-recommends -y \
