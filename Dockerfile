@@ -2,7 +2,7 @@ FROM openjdk:jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ENV GITBUCKET_VER 4.26.0
+ENV GITBUCKET_VER 4.27.0
 ENV GITBUCKET_EXTRA_DEPS "git procps"
 
 ADD https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VER/gitbucket.war /opt/gitbucket.war
