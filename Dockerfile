@@ -2,7 +2,7 @@ FROM openjdk:jre
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
-ENV GITBUCKET_VER 4.30.0
+ENV GITBUCKET_VER 4.30.1
 ENV GITBUCKET_EXTRA_DEPS "git procps"
 
 ADD https://github.com/gitbucket/gitbucket/releases/download/$GITBUCKET_VER/gitbucket.war /opt/gitbucket.war
