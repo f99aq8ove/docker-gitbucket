@@ -1,4 +1,4 @@
-FROM openjdk:jre-alpine
+FROM openjdk:8-jre-alpine
 
 MAINTAINER f99aq8ove <f99aq8ove [at] gmail.com>
 
